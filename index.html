@@ -10,36 +10,36 @@
    <main>
     <div class="display" id="display">0</div>
     <div class="calculator-row">
-        <button class="calculatorBtn flex-1 bg-blue">AC</button>
-        <button class="calculatorBtn flex-1 bg-blue">+/-</button>
-        <button class="calculatorBtn flex-1 bg-blue">%</button>
-        <button class="calculatorBtn flex-1 bg-orange">/</button>
+        <button class="calculatorBtn flex-1 bg-blue" id="reset">AC</button>
+        <button class="calculatorBtn flex-1 bg-blue operator" value="+/-">+/-</button>
+        <button class="calculatorBtn flex-1 bg-blue" id="percent" value="%">%</button>
+        <button class="calculatorBtn flex-1 bg-orange operator" value="/">/</button>
     </div>
     <div class="calculator-row">
-        <button class="calculatorBtn flex-1 bg-cyan">7</button>
-        <button class="calculatorBtn flex-1 bg-cyan">8</button>
-        <button class="calculatorBtn flex-1 bg-cyan">9</button>
-        <button class="calculatorBtn flex-1 bg-orange">*</button>
+        <button class="calculatorBtn flex-1 bg-cyan digit" value="7">7</button>
+        <button class="calculatorBtn flex-1 bg-cyan digit" value="8">8</button>
+        <button class="calculatorBtn flex-1 bg-cyan digit" value="9">9</button>
+        <button class="calculatorBtn flex-1 bg-orange operator" value="*">*</button>
     </div>
     <div class="calculator-row">
-        <button class="calculatorBtn flex-1 bg-cyan">5</button>
-        <button class="calculatorBtn flex-1 bg-cyan">5</button>
-        <button class="calculatorBtn flex-1 bg-cyan">6</button>
-        <button class="calculatorBtn flex-1 bg-orange">-</button>
+        <button class="calculatorBtn flex-1 bg-cyan digit" value="4">4</button>
+        <button class="calculatorBtn flex-1 bg-cyan digit" value="5">5</button>
+        <button class="calculatorBtn flex-1 bg-cyan digit" value="6">6</button>
+        <button class="calculatorBtn flex-1 bg-orange operator" value="-">-</button>
     </div>
     <div class="calculator-row">
-        <button class="calculatorBtn flex-1 bg-cyan">1</button>
-        <button class="calculatorBtn flex-1 bg-cyan">2</button>
-        <button class="calculatorBtn flex-1 bg-cyan">3</button>
-        <button class="calculatorBtn flex-1 bg-orange">+</button>
+        <button class="calculatorBtn flex-1 bg-cyan digit" value="1">1</button>
+        <button class="calculatorBtn flex-1 bg-cyan digit" value="2">2</button>
+        <button class="calculatorBtn flex-1 bg-cyan digit" value="3">3</button>
+        <button class="calculatorBtn flex-1 bg-orange operator" value="+">+</button>
     </div>
     <div class="calculator-row">
-        <button class="calculatorBtn flex-1-01 bg-cyan">0</button>
-        <button class="calculatorBtn flex-0-4 bg-cyan">.</button>
-        <button class="calculatorBtn flex-0-4 bg-orange">=</button>
+        <button class="calculatorBtn flex-1-01 bg-cyan digit" value="0">0</button>
+        <button class="calculatorBtn flex-0-4 bg-cyan digit" id="decimal" value=".">.</button>
+        <button class="calculatorBtn flex-0-4 bg-orange" id="equal" value="=">=</button>
         
     </div>
    </main>
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
