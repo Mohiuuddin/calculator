@@ -4,7 +4,6 @@ let operator = "";
 let selectedValue= "";
 const decimalBtn = document.querySelector("#decimal");
 
-
 function addition (a, b){
     return a+b;
 }
@@ -170,7 +169,22 @@ clear.addEventListener("click", ()=>{
 
 
 
+const backBtn = document.querySelector("#backBtn");
+
+backBtn.addEventListener("click", ()=>{
+  const lastDigit = display.textContent;
+  if(parseFloat(lastDigit)){
+   selectedValue = lastDigit.toString().slice(0, -1);
+    if(selectedValue === ""){
+      selectedValue = 0;
+    } else {
+      selectedValue;
+    } 
+    display.textContent = selectedValue;
+  } else{
+    return;
+  }
+});
+
 digitSelection();
 operatorSelection();
-
-
